@@ -1,0 +1,76 @@
+@import "accordion-js/dist/accordion.min.css";
+
+.faq-title {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.faq-list-item .faq-list-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    display: flex;
+    padding: 28px 24px;
+    margin: 0;
+    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-list-item:first-child .faq-list-title {
+    border-top: 1px solid #e4e5e6;
+}
+
+.faq-list-title:hover,
+.faq-list-title:focus {
+    background: #bcdfd1;
+    border-radius: 16px;
+}
+
+.faq-icon {
+    fill: none;
+    stroke: black;
+    margin-left: 16px;
+    display: block;
+    flex-shrink: 0;
+    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ac .ac-trigger::after {
+    display: none;
+}
+
+.ac {
+    margin-bottom: 0px;
+    border: none;
+    border-bottom: 1px solid #e4e5e6;
+}
+
+.faq-list-item.is-active .faq-icon {
+    transform: rotate(180deg);
+}
+
+.faq-list-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+}
+.faq-list-item.is-active {
+    border-radius: 16px;
+    background-color: #bcdfd1;
+}
+
+.faq-list-item.is-active .faq-list-text{
+    margin: 24px 24px 28px 24px;
+}
+
