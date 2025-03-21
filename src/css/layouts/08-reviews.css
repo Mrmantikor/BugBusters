@@ -1,0 +1,142 @@
+.section {
+  margin-top: 40px;
+}
+.theme-light {
+  --text-main-color: #292929;
+}
+
+.theme-dark {
+  --text-main-color: #f0f0f0;
+}
+
+.reviews-title {
+  font-family: Impact, sans-serif;
+  font-size: 52px;
+  letter-spacing: 1.8px;
+  line-height: 64px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #292929;
+}
+
+.swiper-wrapper {
+  margin-bottom: 24px;
+}
+
+.swiper-wrapper .swiper-slide {
+  width: 320px;
+  height: 296px;
+  align-items: center;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: #e4e5e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #292929;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.swiper-wrapper .swiper-slide:hover {
+  transform: scale(1.03);
+}
+.user-comment {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+
+.user-info {
+  width: 256px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.user-photo {
+  display: block;
+  border-radius: 50%;
+}
+
+.reviews-btns-wrapp {
+  max-width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 24px;
+}
+.icon-btn-back {
+  transform: rotate(180deg);
+}
+
+.reviews-btn-left,
+.reviews-btn-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  border-radius: 8px;
+  border: 1px solid #292929;
+  background-color: transparent;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviews-btn-left:disabled,
+.reviews-btn-right:disabled {
+  border: 1px solid #e4e5e6;
+  cursor: not-allowed;
+}
+
+.reviews-btn-left:not(:disabled):hover,
+.reviews-btn-right:not(:disabled):hover {
+  background-color: #bbbbbb;
+}
+
+.icon-svg {
+  fill: none;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-titel {
+    font-size: 108px;
+    letter-spacing: 1.8px;
+    line-height: 124px;
+    margin-bottom: 60px;
+  }
+
+  #slide {
+    width: 640px;
+    height: 224px;
+    border-radius: 16px;
+  }
+
+  .user-info {
+    width: 680px;
+  }
+  .section {
+    margin-top: 62px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-titel {
+    font-size: 108px;
+    line-height: 124px;
+  }
+
+  .reviews-title {
+    margin-bottom: 80px;
+  }
+  .swiper-wrapper {
+    flex-direction: row;
+  }
+
+  .user-info {
+    width: 528px;
+  }
+  .section {
+    margin-top: 82px;
+    margin-bottom: 48px;
+  }
+}

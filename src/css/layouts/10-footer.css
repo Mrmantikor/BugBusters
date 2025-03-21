@@ -1,0 +1,86 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
+.footer-logo {
+  display: block;
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 32px;
+}
+
+.footer-logo-part {
+  color: var(--accet-green);
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.footer-social-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: var(--accet-green);
+}
+
+.footer-wrapper {
+  margin-bottom: 40px;
+}
+
+.footer-copyright-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--black);
+  max-width: 197px;
+  margin: 0 auto;
+}
+
+/* =============== tablet-styles =============== */
+
+@media screen and (min-width: 768px) {
+  .footer-social-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .footer-copyright-text {
+    max-width: none;
+    text-align: right;
+  }
+}
+
+/* =============== Desctop Styles =============== */
+
+@media screen and (min-width: 1280px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 0;
+  }
+}
