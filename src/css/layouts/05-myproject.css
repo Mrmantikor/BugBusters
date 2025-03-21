@@ -104,6 +104,10 @@
 .item-btn-grey:focus {
   background: #bbb;
 }
+.item-btn-grey:focus,
+.item-btn-grey:active {
+  background: #e4e5e6 !important;
+}
 
 .visit {
   font-family: 'Poppins', sans-serif;
@@ -136,6 +140,20 @@
 .load-more:focus {
   color: #00b068;
 }
+@media (max-width: 1279px) {
+  .load-more:focus,
+  .load-more:active {
+    color: inherit !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .load-more:focus:not(:hover),
+  .load-more:active:not(:hover) {
+    color: inherit !important;
+  }
+}
+
 @media (min-width: 768px) {
   .load-more {
     font-size: 20px;
@@ -166,6 +184,11 @@
 
 .load-more:hover {
   animation: pulse 1s infinite;
+}
+@media (hover: hover) {
+  .load-more:hover {
+    animation: pulse 1s infinite;
+  }
 }
 
 .item-btn-grey:hover {
