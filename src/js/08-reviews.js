@@ -27,10 +27,10 @@ const reviewsFetch = async () => {
 const templateCard = card => {
   return `
     <li class="swiper-slide" id="slide">
-        <p class="user-comment">${card.review}</p>
-        <div class="user-info">
-          <img class="user-photo" src="${card.avatar_url}" alt="User photo" width="40" height="40" loading="lazy"/>
-          <h4 class="user-name">${card.author}</h4>
+        <p class="review-comment">${card.review}</p>
+        <div class="review-info">
+          <img class="review-photo" src="${card.avatar_url}" alt="User photo" width="40" height="40" loading="lazy"/>
+          <h3 class="review-name">${card.author}</h3>
         </div>
     </li>`;
 };

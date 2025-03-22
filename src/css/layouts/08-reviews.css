@@ -1,14 +1,6 @@
 .section {
   margin-top: 40px;
 }
-.theme-light {
-  --text-main-color: #292929;
-}
-
-.theme-dark {
-  --text-main-color: #f0f0f0;
-}
-
 .reviews-title {
   font-family: Impact, sans-serif;
   font-size: 52px;
@@ -39,21 +31,21 @@
 .swiper-wrapper .swiper-slide:hover {
   transform: scale(1.03);
 }
-.user-comment {
+.review-comment {
   font-family: Poppins, sans-serif;
   font-size: 14px;
   letter-spacing: 0.5px;
   line-height: 24px;
 }
 
-.user-info {
+.review-info {
   width: 256px;
   display: flex;
   align-items: center;
   column-gap: 8px;
 }
 
-.user-photo {
+.review-photo {
   display: block;
   border-radius: 50%;
 }
@@ -64,7 +56,7 @@
   justify-content: end;
   gap: 24px;
 }
-.icon-btn-back {
+.js-btn-left {
   transform: rotate(180deg);
 }
 
@@ -98,7 +90,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .reviews-titel {
+  .reviews-title {
     font-size: 108px;
     letter-spacing: 1.8px;
     line-height: 124px;
@@ -111,7 +103,7 @@
     border-radius: 16px;
   }
 
-  .user-info {
+  .review-info {
     width: 680px;
   }
   .section {
@@ -120,7 +112,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .section-titel {
+  .section-title {
     font-size: 108px;
     line-height: 124px;
   }
@@ -132,7 +124,7 @@
     flex-direction: row;
   }
 
-  .user-info {
+  .review-info {
     width: 528px;
   }
   .section {
