@@ -1,14 +1,14 @@
 .tech-skills-marquee {
   display: flex;
-  padding: 40px 0;
+  padding: 32px 0;
   max-width: 352px;
   margin: 0 auto;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 1.33;
-  letter-spacing: 0.01em;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--black);
   background-color: var(--light-accet);
@@ -60,6 +60,10 @@
 @media screen and (min-width: 768px) {
   .tech-skills-marquee {
     max-width: 768px;
+    padding: 40px 0;
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
   }
 }
 
