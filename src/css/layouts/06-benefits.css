@@ -18,6 +18,10 @@
     margin-bottom: 40px;
 }
 
+.benefits-decor{
+    display: none;
+}
+
 .benefits-list {
     display: flex;
     flex-direction: column;
@@ -35,6 +39,7 @@
     border-radius: 8px;
     width: 48px;
     height: 48px;
+    padding: 12px;
 }
 
 .benefits-list-title {
@@ -53,3 +58,89 @@
     letter-spacing: 0.03em;
     color: #292929;
 }
+
+/* #region for Tablet */
+@media screen and (min-width: 768px) {
+    .benefits {
+        margin-top: 62px;
+        margin-bottom: 62px;
+    }
+
+    .benefits-title {
+        font-size: 108px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        margin-bottom: 0px;
+        max-width: 704px;
+    }
+
+    .benefits-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 32px;
+    }
+    
+    .benefits-list-title {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .benefits-list-item:nth-child(1) {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end; 
+    }
+    
+    .benefits-list-item:nth-child(2),
+    .benefits-list-item:nth-child(3) {
+        grid-row: 2; 
+    }
+    
+    .benefits-list-item:nth-child(4) {
+        grid-row: 3; 
+        justify-self: start; 
+    }
+}
+/* #endregion for Tablet */
+
+/* #region for Desktop */
+@media screen and (min-width: 1280px) {
+    .benefits {
+        position: relative;
+        margin-top: 82px;
+        margin-bottom: 82px;
+    }
+
+    .benefits-title {
+        position: relative;
+        display: inline-block;
+        max-width: 681px;
+    }
+
+    .benefits-decor {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -116px;
+        width: 526px;
+        height: 408px;
+    }
+
+    .benefits-list {
+        margin-top: -104px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .benefits-list-item:nth-child(1) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .benefits-list-item:nth-child(4) {
+        grid-row: 2; 
+    }
+
+}
+/* #endregion for Desktop */
