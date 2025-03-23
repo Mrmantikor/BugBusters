@@ -99,7 +99,7 @@
        }
 
        .about-container {
-           background-image: url('./img/03-aboutme/decor-tablet1x.png');
+           background-image: url('/src/img/03-aboutme/decor-tablet1x.png');
            background-repeat: no-repeat;
            background-position: bottom 155px right 32px;
        }
@@ -154,7 +154,7 @@
        }
 
        .about-container {
-           background-image: url('../img/03-aboutme/decor-desktop1x.png');
+           background-image: url('/src/img/03-aboutme/decor-tablet1x.png');
            background-repeat: no-repeat;
            background-position: bottom 250px right 32px;
        }
