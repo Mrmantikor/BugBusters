@@ -1,0 +1,74 @@
+.tech-skills-marquee {
+  display: flex;
+  padding: 32px 0;
+  max-width: 352px;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--black);
+  background-color: var(--light-accet);
+  position: relative;
+}
+
+.marquee-second {
+  color: var(--accet-green);
+  background-color: var(--light-grey);
+  transform: rotate(2deg);
+  z-index: -1;
+}
+
+.tech-skills-line {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 24px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accet-green);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.dot-second {
+  background-color: var(--black);
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tech-skills-marquee {
+    max-width: 768px;
+    padding: 40px 0;
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .tech-skills-marquee {
+    max-width: 1280px;
+  }
+}
