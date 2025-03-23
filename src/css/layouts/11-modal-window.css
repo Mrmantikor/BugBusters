@@ -1,5 +1,6 @@
 body.modal-open {
   overflow: hidden;
+  pointer-events: auto;
 }
 .work-together-modal {
   position: fixed;
@@ -9,7 +10,6 @@ body.modal-open {
   width: 100%;
   background: rgba(29, 29, 29, 0.8);
   padding: 20px;
-  /* pointer-events: none; */
   z-index: 100;
   overflow: hidden;
   display: flex;
@@ -34,12 +34,19 @@ body.modal-open {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: #00b068;
+  color: light-dark(#00b068, #14c57c);
 }
 .modal-message {
+  margin-top: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: light-dark(var(--black), var(--white));
 }
 .modal-close-btn {
-  /* align-self: end; */
   position: absolute;
   right: 20px;
   top: 20px;
@@ -48,6 +55,5 @@ body.modal-open {
   width: 24px;
   height: 24px;
 
-  fill: black;
-  stroke: red;
+  stroke: light-dark(var(--black), var(--white));
 }
