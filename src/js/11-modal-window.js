@@ -10,3 +10,18 @@ function closeModal(event) {
 }
 
 button.addEventListener(`click`, closeModal);
+modalOverlay.addEventListener('click', function (e) {
+  if (e.target === modalOverlay) {
+    closeModal(e);
+  }
+});
+
+document.addEventListener('keydown', function (e) {
+  const isModalVisible = !modalOverlay.classList.contains('visually-hidden');
+
+  if (!isModalVisible) return;
+
+  if (e.key === 'Escape' || e.key === 'Enter') {
+    closeModal(e);
+  }
+});
