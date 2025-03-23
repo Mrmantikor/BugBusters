@@ -1,0 +1,53 @@
+body.modal-open {
+  overflow: hidden;
+}
+.work-together-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(29, 29, 29, 0.8);
+  padding: 20px;
+  /* pointer-events: none; */
+  z-index: 100;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-together-modal-inner {
+  position: relative;
+  border: 1px solid #e4e5e6;
+  border-radius: 16px;
+  padding: 48px 32px;
+  width: 320px;
+  height: 328px;
+  background: light-dark(var(--white), var(--black));
+}
+.modal-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00b068;
+}
+.modal-message {
+}
+.modal-close-btn {
+  /* align-self: end; */
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.work-together-modal-icon {
+  width: 24px;
+  height: 24px;
+
+  fill: black;
+  stroke: red;
+}
