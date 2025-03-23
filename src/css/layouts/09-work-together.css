@@ -119,6 +119,9 @@
   padding: 0 16px;
   background: light-dark(var(--light-grey), #2a2d32);
 }
+.work-together-input.valid {
+  color: #28a745;
+}
 .work-together-textarea {
   min-height: 128px;
 

@@ -6,9 +6,19 @@ console.dir(form);
 const { email, message, button } = form.elements;
 console.dir(email);
 form.addEventListener(`submit`, clickHandler);
+email.addEventListener(`input`, validator);
 
+function validator() {
+  if (email.validity.valid) {
+    email.textContent = '✔';
+    feedback.classList.add('valid');
+  }
+  console.log(email.validity.valid);
+  console.log(email.textContent);
+}
 function isInputValid(form) {
   const { email, message } = form.elements;
+
   return email.value && message.value ? true : false;
 }
 
@@ -33,8 +43,8 @@ async function sendQuerry(form) {
     .catch(reject => {
       console.log(reject);
       reject.response.data
-        ? iziToast.error(reject)
-        : iziToast.error(reject.response.data);
+        ? iziToast.error(reject.response.data)
+        : iziToast.error(reject);
     });
   return response;
 }
