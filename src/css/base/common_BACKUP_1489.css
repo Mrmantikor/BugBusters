@@ -1,15 +1,18 @@
 /* #region Clear Styles */
+<<<<<<< HEAD
+=======
 
 :root {
-  --black: #292929;
-  --accet-green: #00b068;
-  --white: #f0f0f0;
-  --light-grey: #e4e5e6;
-  --light-accet: #bcdfd1;
-  --hover-green: #009156;
-  --red: #e74a3b;
-  --hover-grey: #bbbbbb;
-}
+--black: #292929;
+--accet-green: #00b068;
+--white: #f0f0f0;
+--light-grey: #e4e5e6;
+--light-accet: #bcdfd1;
+--hover-green: #009156;
+--red: #e74a3b;
+--hover-grey: #bbbbbb;
+>>>>>>> origin/main
+
 :root {
   --black: #292929;
   --accet-green: #00b068;
@@ -27,7 +30,6 @@ html {
 }
 
 body {
-  background-color: #f0f0f0;
 }
 
 h1,

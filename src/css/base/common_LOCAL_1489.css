@@ -10,16 +10,6 @@
   --red: #e74a3b;
   --hover-grey: #bbbbbb;
 }
-:root {
-  --black: #292929;
-  --accet-green: #00b068;
-  --white: #f0f0f0;
-  --light-grey: #e4e5e6;
-  --light-accet: #bcdfd1;
-  --hover-green: #009156;
-  --red: #e74a3b;
-  --hover-grey: #bbbbbb;
-}
 
 html {
   scrollbar-gutter: stable;
@@ -27,7 +17,6 @@ html {
 }
 
 body {
-  background-color: #f0f0f0;
 }
 
 h1,
