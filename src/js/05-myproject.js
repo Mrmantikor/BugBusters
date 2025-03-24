@@ -21,7 +21,7 @@ function createProjectItem({ image, name }) {
       <div class="container-txt-btn">
         <p class="item-text">${name}</p>
         <div class='project-icon-div'>
-        <a class="item-btn-grey" href="https://github.com/Lika060/BugBusters-project" target="_blank">
+        <a class="item-btn-grey" href="https:/github.com/Lika060/BugBusters-project" target="_blank">
           <span class='visit'>VISIT</span>
           <svg class="btn-grey-icon" width="24" height="24">
             <use href="${projSvg}#icon-icon"></use>
