@@ -1,107 +1,145 @@
 .benefits {
-    margin-top: 40px;
-    margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .title-green-word {
-    color: #00b068;
-    
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 
 .benefits-title {
-    font-family: "Impact", sans-serif;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.benefits-decor {
+  display: none;
 }
 
 .benefits-list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .benefits-list-item {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .benefits-icon {
-    background-color: #bcdfd1;
-    border-radius: 8px;
-    width: 48px;
-    height: 48px;
-    padding: 12px;
+  background-color: light-dark(var(--light-accet), var(--dark-accet-dt));
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
 }
 
 .benefits-list-title {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #292929;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: light-dark(var(--black), var(--white));
 }
 
 .benefits-list-text {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #292929;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: light-dark(var(--black), var(--white));
 }
 
 /* #region for Tablet */
 @media screen and (min-width: 768px) {
-    .benefits {
-        margin-top: 62px;
-        margin-bottom: 62px;
-    }
+  .benefits {
+    margin-top: 62px;
+    margin-bottom: 62px;
+  }
 
-    .benefits-title {
-        font-size: 108px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        margin-bottom: 0px;
-        max-width: 704px;
-    }
+  .benefits-title {
+    font-size: 108px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-bottom: 0px;
+    max-width: 704px;
+  }
 
-    .benefits-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        gap: 32px;
-    }
-    
-    .benefits-list-title {
-        font-size: 20px;
-        line-height: 1.6;
-    }
+  .benefits-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 32px;
+  }
 
-    .benefits-list-item:nth-child(1) {
-        grid-column: 2;
-        grid-row: 1;
-        justify-self: end; 
-    }
-    
-    .benefits-list-item:nth-child(2),
-    .benefits-list-item:nth-child(3) {
-        grid-row: 2; 
-    }
-    
-    .benefits-list-item:nth-child(4) {
-        grid-row: 3; 
-        justify-self: start; 
-    }
+  .benefits-list-title {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .benefits-list-item:nth-child(1) {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+  }
+
+  .benefits-list-item:nth-child(2),
+  .benefits-list-item:nth-child(3) {
+    grid-row: 2;
+  }
+
+  .benefits-list-item:nth-child(4) {
+    grid-row: 3;
+    justify-self: start;
+  }
 }
 /* #endregion for Tablet */
 
 /* #region for Desktop */
 @media screen and (min-width: 1280px) {
+  .benefits {
+    position: relative;
+    margin-top: 82px;
+    margin-bottom: 82px;
+  }
+
+  .benefits-title {
+    position: relative;
+    display: inline-block;
+    max-width: 681px;
+  }
+
+  .benefits-decor {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -116px;
+    width: 526px;
+    height: 408px;
+  }
+
+  .benefits-list {
+    margin-top: -104px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .benefits-list-item:nth-child(1) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .benefits-list-item:nth-child(4) {
+    grid-row: 2;
+  }
     .benefits {
         position: relative;
         margin-top: 82px;
@@ -146,6 +184,5 @@
         background-size: 526px 408px;
         padding-top: 116px;
     }
-
 }
 /* #endregion for Desktop */

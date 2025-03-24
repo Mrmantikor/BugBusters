@@ -1,67 +1,76 @@
-@import "accordion-js/dist/accordion.min.css";
+@import 'accordion-js/dist/accordion.min.css';
+
 .faq {
-    margin-top: 40px;
-    margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+.faq-decor {
+  display: none;
 }
 
 .faq-title {
-    font-family: "Impact", sans-serif;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #292929;
-    margin-bottom: 40px;
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 40px;
 }
 
-.faq-list-title{
-    display: flex;
-    justify-content: space-between;
+.faq-list-title {
+  display: flex;
+  justify-content: space-between;
 }
 
 .faq-list-item .faq-list-title {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #292929;
-    display: flex;
-    padding: 28px 24px;
-    margin: 0;
-    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  display: flex;
+  padding: 28px 24px;
+  margin: 0;
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .faq-list-item:first-child .faq-list-title {
-    border-top: none; 
+  border-top: none;
 }
 
 .faq-list-item:first-child:not(.is-active) .faq-list-title {
-    border-top: 1px solid #e4e5e6;
+  border-top: 1px solid var(--light-grey);
 }
 
 .faq-list-title:hover,
 .faq-list-title:focus {
-    background-color: #bcdfd1;
-    border-radius: 16px;
+  background-color: var(--light-accet);
+  border-radius: 16px;
 }
 
 .faq-icon {
-    fill: none;
-    stroke: black;
-    margin-left: 16px;
-    padding: 6px;
-    display: block;
-    flex-shrink: 0;
-    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: none;
+  stroke: black;
+  margin-left: 16px;
+  padding: 6px;
+  display: block;
+  flex-shrink: 0;
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ac .ac-trigger::after {
-    display: none;
+  display: none;
 }
 
 .ac {
+  margin-bottom: 0px;
+  border: none;
+  border-bottom: 1px solid var(--light-grey);
     margin-bottom: 0px;
     border: none;
     border-bottom: 1px solid #e4e5e6;
@@ -69,43 +78,66 @@
 }
 
 .faq-list-item.is-active .faq-icon {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .faq-list-text {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #292929;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
 }
 .faq-list-item.is-active {
-    border-radius: 16px;
-    background-color: #bcdfd1;
+  border-radius: 16px;
+  background-color: var(--light-accet);
 }
 
-.faq-list-item.is-active .faq-list-text{
-    margin: 24px 24px 28px 24px;
+.faq-list-item.is-active .faq-list-text {
+  margin: 24px 24px 28px 24px;
 }
 
 /* #region for Tablet */
 @media screen and (min-width: 768px) {
-    .faq {
-        margin-top: 62px;
-        margin-bottom: 62px;
-    }
+  .faq {
+    margin-top: 62px;
+    margin-bottom: 62px;
+  }
 
-    .faq-title {
-        font-size: 108px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        margin-bottom: 60px;
-    }
+  .faq-title {
+    font-size: 108px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+  }
 }
 /* #endregion for Tablet */
 
 /* #region for Desktop */
 @media screen and (min-width: 1280px) {
+  .faq {
+    position: relative;
+    margin-top: 82px;
+    margin-bottom: 82px;
+  }
+
+  .faq-title {
+    position: relative;
+  }
+
+  .accordion-container {
+    width: 592px;
+    margin-top: -96px;
+    margin-left: auto;
+  }
+
+  .faq-decor {
+    position: absolute;
+    bottom: 0;
+    display: block;
+  }
+}
+/* #endregion for Desktop */
     .faq {
         position: relative;
         margin-top: 82px;
