@@ -1,0 +1,74 @@
+{
+  "projects": [
+    {
+      "name": "wallet webservice",
+      "image": {
+        "1x": "/img/myproject/1.webp",
+        "2x": "/img/myproject/1@2x.webp"
+      }
+    },
+    {
+      "name": "Green harvest webservice",
+      "image": {
+        "1x": "/img/myproject/2.webp",
+        "2x": "/img/myproject/2@2x.webp"
+      }
+    },
+    {
+      "name": "English Exellence webservice",
+      "image": {
+        "1x": "/img/myproject/3.webp",
+        "2x": "/img/myproject/3@2x.webp"
+      }
+    },
+    {
+      "name": "starlight studio landing page",
+      "image": {
+        "1x": "/img/myproject/4.webp",
+        "2x": "/img/myproject/4@2x.webp"
+      }
+    },
+    {
+      "name": "energy flow webservice ",
+      "image": {
+        "1x": "/img/myproject/5.webp",
+        "2x": "/img/myproject/5@2x.webp"
+      }
+    },
+    {
+      "name": "fruitbox online store",
+      "image": {
+        "1x": "/img/myproject/6.webp",
+        "2x": "/img/myproject/6@2x.webp"
+      }
+    },
+    {
+      "name": "chego jewelry website",
+      "image": {
+        "1x": "/img/myproject/7.webp",
+        "2x": "/img/myproject/7@2x.webp"
+      }
+    },
+    {
+      "name": "Mimino website",
+      "image": {
+        "1x": "/img/myproject/8.webp",
+        "2x": "/img/myproject/8@2x.webp"
+      }
+    },
+    {
+      "name": "vyshyvanka vibes Landing Page",
+      "image": {
+        "1x": "/img/myproject/9.webp",
+        "2x": "/img/myproject/9@2x.webp"
+      }
+    },
+    {
+      "name": "power pulse webservice ",
+      "image": {
+        "1x": "/img/myproject/10.webp",
+        "2x": "/img/myproject/10@2x.webp"
+      }
+    }
+  ]
+}
