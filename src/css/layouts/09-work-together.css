@@ -13,7 +13,7 @@
 }
 @media (min-width: 760px) {
   .work-together {
-    background-image: url('../../img/decor_bg_work_together.png');
+    background-image: url('/img/decor_bg_work_together.png');
     background-position: top right;
     background-repeat: no-repeat;
   }
