@@ -14,7 +14,7 @@ function validator() {
 }
 function isInputValid(form) {
   const { email, message } = form.elements;
-  return email.value && message.value ? true : false;
+  return email.value.trim() && message.value.trim() ? true : false;
 }
 
 function onSucsessResponse(response) {
@@ -25,8 +25,8 @@ function onSucsessResponse(response) {
 async function sendQuerry(form) {
   const { email, message } = form.elements;
   const querry = {
-    email: email.value,
-    comment: message.value,
+    email: email.value.trim(),
+    comment: message.value.trim(),
   };
   const url = `https://portfolio-js.b.goit.study/api/requests`;
   const response = await axios
@@ -56,6 +56,7 @@ function clickHandler(event) {
 
 let mapLoaded = false;
 let mapVisible = false;
+let map;
 const mapDiv = document.createElement('div');
 mapDiv.id = 'map';
 
@@ -79,11 +80,21 @@ function moveMap() {
 
   return wrapper;
 }
+async function loadMapStyle(theme) {
+  const response = await fetch(`styles/map-${theme}.json`);
+  return await response.json();
+}
 
-window.initMap = function () {
-  const map = new google.maps.Map(document.getElementById('map'), {
+window.initMap = async function () {
+  const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const theme = isDark ? 'dark' : 'light';
+  const mapStyle = await loadMapStyle(theme);
+
+  // 🔄 використовуємо глобальну змінну map
+  map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 40.61589475533107, lng: -74.0637538196986 },
     zoom: 12,
+    styles: mapStyle,
   });
 
   new google.maps.Marker({
@@ -126,3 +137,11 @@ window.addEventListener('resize', () => {
     wrapper.classList.add('active');
   }
 });
+
+window
+  .matchMedia('(prefers-color-scheme: dark)')
+  .addEventListener('change', async e => {
+    const newTheme = e.matches ? 'dark' : 'light';
+    const newStyle = await loadMapStyle(newTheme);
+    map.setOptions({ styles: newStyle });
+  });
