@@ -75,7 +75,9 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
 /* #endregion */
+
 /* #region Toggle Button Theme */
 .toggle-main {
   all: unset;
