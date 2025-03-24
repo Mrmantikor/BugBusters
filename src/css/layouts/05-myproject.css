@@ -13,7 +13,7 @@
   line-height: 1.23;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: light-dark(var(--black), var(--white));
   margin-bottom: 81px;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -36,7 +36,7 @@
 }
 
 .project-span {
-  color: #00b068;
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 .project-img {
   width: 100%;
@@ -70,7 +70,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: light-dark(var(--black), var(--white));
   padding-bottom: 16px;
 }
 .item-text {
@@ -80,7 +80,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #292929;
+  color: light-dark(var(--black), var(--white));
   padding-bottom: 16px;
 }
 @media (min-width: 768px) {
@@ -94,18 +94,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e4e5e6;
+  background: light-dark(var(--light-grey), var(--charcoal-dt));
   border-radius: 8px;
   width: 125px;
   height: 48px;
 }
 .item-btn-grey:hover,
 .item-btn-grey:focus {
-  background: #bbb;
+  background: var(--hover-grey);
 }
 .item-btn-grey:focus,
 .item-btn-grey:active {
-  background: #e4e5e6 !important;
+  background: var(--light-grey) !important;
 }
 
 .visit {
@@ -114,7 +114,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: light-dark(var(--black), var(--white));
   padding-right: 16px;
 }
 .container-txt-btn {
@@ -131,14 +131,14 @@
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: light-dark(var(--black), var(--white));
   position: relative;
   display: inline-block;
 }
 @media (min-width: 1280px) {
   .load-more:hover,
   .load-more:focus {
-    color: #00b068;
+    color: var(--accet-green);
   }
 }
 
@@ -172,7 +172,7 @@
   bottom: -3px;
   width: 107px;
   height: 2px;
-  background-color: #00b068;
+  background-color: light-dark(var(--accet-green), var(--accet-green-dt));
   transform: translateX(-50%);
 }
 @media (min-width: 768px) {

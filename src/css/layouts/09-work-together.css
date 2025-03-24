@@ -1,4 +1,5 @@
 @import 'izitoast/dist/css/iziToast.min.css';
+
 .work-together {
   padding: 80px 0 40px 0;
 
@@ -23,7 +24,7 @@
   line-height: 1.23;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: light-dark(var(--accet-green), #14c57c);
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 @media (min-width: 760px) {
   .work-together-title {
@@ -85,7 +86,7 @@
   }
 }
 .work-together-contact-item:hover {
-  color: light-dark(var(--accet-green), #14c57c);
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 .work-together-contact-link {
   display: flex;
@@ -118,14 +119,14 @@
   height: 48px;
   border-radius: 8px;
   padding: 0 16px;
-  background: light-dark(var(--light-grey), #2a2d32);
+  background: light-dark(var(--light-grey), var(--charcoal-dt));
 }
 
 .work-together-input:valid {
-  background: light-dark(var(--light-grey), #2a2d32);
+  background: light-dark(var(--light-grey), var(--charcoal-dt));
 }
 .work-together-input:invalid {
-  color: #e74a3b;
+  color: var(--error);
 }
 .work-together-input-wrapper {
   position: relative;
@@ -141,8 +142,8 @@
   border-radius: 50%;
   height: 16px;
   width: 16px;
-  color: light-dark(var(--light-grey), #2a2d32);
-  background-color: light-dark(#00b068, #14c57c);
+  color: light-dark(var(--light-grey), var(--charcoal-dt));
+  background-color: light-dark(var(--accet-green), var(--accet-green-dt));
   font-size: 12px;
 }
 .work-together-input-wrapper:has(input:invalid:not(:placeholder-shown))::after {
@@ -159,7 +160,7 @@
   font-size: 12px;
   line-height: 1.33333;
   letter-spacing: 0.04em;
-  color: #e74a3b;
+  color: var(--error);
 }
 
 .work-together-textarea {
@@ -168,7 +169,7 @@
   border-radius: 8px;
   padding: 16px;
 
-  background: light-dark(var(--light-grey), #2a2d32);
+  background: light-dark(var(--light-grey), var(--charcoal-dt));
 
   resize: none;
 }
@@ -180,14 +181,14 @@
   border-radius: 8px;
   padding: 12px 24px;
 
-  background-color: light-dark(var(--accet-green), #14c57c);
+  background-color: light-dark(var(--accet-green), var(--accet-green-dt));
 
   font-weight: 500;
   text-align: center;
   color: light-dark(var(--white), var(--white));
 }
 .work-together-button:hover {
-  background-color: light-dark(#009156, #009156);
+  background-color: light-dark(var(--accet-green-dt), var(--accet-green-dt));
 }
 /* Google map */
 .map-wrapper {

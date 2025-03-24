@@ -66,6 +66,10 @@
   font-size: 63px;
   line-height: 1.25;
   text-transform: uppercase;
+  color: light-dark(var(--black), var(--white));
+}
+.hero-span {
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 
 @media screen and (min-width: 768px) {
@@ -118,13 +122,13 @@
 }
 
 .hero-label {
-  color: var(--accet-green);
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 
 .hero-arrow {
-  fill: var(--accet-green);
+  fill: light-dark(var(--accet-green), var(--accet-green-dt));
   stroke-width: 2px;
-  stroke: var(--accet-green);
+  stroke: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 
 .hero-pic {
@@ -156,7 +160,7 @@
   width: 176px;
   height: 92px;
   margin-left: -112px;
-  background-color: var(--light-accet);
+  background-color: light-dark(var(--light-accet), var(--accet-green-dt));
   border-radius: 16px;
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: -1;
@@ -232,6 +236,7 @@
   text-transform: uppercase;
   font-size: 18px;
   line-height: 1.55556;
+  color: light-dark(var(--black), var(--white));
 }
 
 @media screen and (min-width: 768px) {
@@ -242,7 +247,9 @@
 }
 
 .hero-social {
-  background-color: var(--light-grey);
+  background-color: light-dark(var(--light-grey), var(--charcoal-dt));
+  color: light-dark(var(--black), var(--white));
+
   display: flex;
   flex-direction: column;
   align-items: center;
