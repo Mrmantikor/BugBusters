@@ -1,3 +1,4 @@
+/* #region Header */
 .navigation {
   position: absolute;
   top: 0;
@@ -25,7 +26,7 @@
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background-image: url('../../img/01-header/bcg1.png');
+  background-image: url('../../img/01-header/header.webp');
   background-repeat: no-repeat;
   background-position: center top 16px;
   content-visibility: auto;
@@ -74,6 +75,8 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* #endregion */
 
 /* #region Toggle Button Theme */
 .toggle-main {
@@ -251,5 +254,28 @@
   .nav-link {
     padding: 36px 0;
   }
+}
+/* #endregion */
+/* #region Theme */
+.theme-light {
+  --color-logo-header: var(--black);
+  --color-logo-span: var(--accet-green);
+  --color-link-header: var(--black);
+  --color-burger-menu: var(--black);
+  --color-modal-container: var(--white);
+  --color-x-modal: var(--black);
+}
+
+.theme-dark {
+  --color-logo-header: var(--white);
+  --color-logo-span: var(--accet-green);
+  --color-link-header: var(--white);
+  --color-burger-menu: var(--white);
+  --color-modal-container: var(--black);
+  --color-x-modal: var(--white);
+}
+
+body {
+  background-color: var(--background-color);
 }
 /* #endregion */
