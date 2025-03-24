@@ -251,7 +251,7 @@ function createMarkupProjects(images) {
           <div class="projects-box_descr">
             <h3 class="projects-img_title">${alt}</h3>
             <a
-              href="https://bulatovatati.github.io/landing-page-2.0/"
+              href="https://lika060.github.io/BugBusters-project/"
               class="projects-button_link"
               target="_blank"
             >
