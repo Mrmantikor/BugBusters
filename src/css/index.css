@@ -1,4 +1,4 @@
-@import url(modern-normalize/modern-normalize.css);
+@import url('modern-normalize/modern-normalize.css');
 @import url(./layouts/01-header.css);
 @import url(./layouts/02-hero.css);
 @import url(./layouts/03-aboutme.css);

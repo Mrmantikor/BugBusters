@@ -1,7 +1,6 @@
 .tech-skills-marquee {
   display: flex;
   padding: 32px 0;
-  max-width: 352px;
   margin: 0 auto;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
@@ -30,9 +29,13 @@
   min-width: 100%;
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 18s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+
+.line-second {
+  animation-name: secondMarqueeLine;
 }
 
 .dot {
@@ -57,18 +60,21 @@
   }
 }
 
+@keyframes secondMarqueeLine {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .tech-skills-marquee {
-    max-width: 768px;
     padding: 40px 0;
     font-size: 36px;
     line-height: 1.33;
     letter-spacing: 0.01em;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .tech-skills-marquee {
-    max-width: 1280px;
   }
 }
