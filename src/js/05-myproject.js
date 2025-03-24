@@ -1,7 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-import icon from '/img/sprite.svg';
+import icon from '../img/sprite.svg';
 
 import projectDesk03 from '/img/05-myproject/projects-desk-03-min.png';
 import projectDesk03_2x from '/img/05-myproject/projects-desk-03@2x-min.png';
