@@ -4,10 +4,6 @@
     margin-bottom: 40px;
 }
 
-.faq-decor {
-    display: none;
-}
-
 .faq-title {
     font-family: "Impact", sans-serif;
     font-weight: 400;
@@ -69,6 +65,7 @@
     margin-bottom: 0px;
     border: none;
     border-bottom: 1px solid #e4e5e6;
+    background-color: transparent;
 }
 
 .faq-list-item.is-active .faq-icon {
@@ -125,11 +122,12 @@
         margin-left: auto; 
  
     }
-    
-    .faq-decor {
-        position: absolute;
-        bottom: 0;
-        display: block; 
+
+    .faq-container{
+        background-image: url('/img/07-f-a-q/decor-faq.png');
+        background-repeat: no-repeat;
+        background-position: bottom left;
     }
+
 }
 /* #endregion for Desktop */

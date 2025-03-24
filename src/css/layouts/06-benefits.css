@@ -18,10 +18,6 @@
     margin-bottom: 40px;
 }
 
-.benefits-decor{
-    display: none;
-}
-
 .benefits-list {
     display: flex;
     flex-direction: column;
@@ -118,14 +114,14 @@
         max-width: 681px;
     }
 
-    .benefits-decor {
+    /* .benefits-decor {
         display: block;
         position: absolute;
         right: 0;
         top: -116px;
         width: 526px;
         height: 408px;
-    }
+    } */
 
     .benefits-list {
         margin-top: -104px;
@@ -140,6 +136,15 @@
 
     .benefits-list-item:nth-child(4) {
         grid-row: 2; 
+    }
+
+    .benefits-container{
+        position: relative;
+        background-image: url('/img/06-benefits/decor-benefits.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 526px 408px;
+        padding-top: 116px;
     }
 
 }
