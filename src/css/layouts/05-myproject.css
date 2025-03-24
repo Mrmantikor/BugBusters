@@ -1,0 +1,224 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+.projec-section {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.project-title {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 81px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .project-title {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .project-title {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
+}
+
+.project-span {
+  color: #00b068;
+}
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+
+  margin-bottom: 12px;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .project-img {
+    width: 320px;
+    height: 184px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .project-img {
+    border-radius: 24px;
+    width: 704px;
+    height: 428px;
+  }
+}
+@media (min-width: 1280px) {
+  .project-img {
+    width: 1008px;
+    height: 580px;
+  }
+}
+.item-subtext {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  padding-bottom: 16px;
+}
+.item-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #292929;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .item-text {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+}
+.item-btn-grey {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e4e5e6;
+  border-radius: 8px;
+  width: 125px;
+  height: 48px;
+}
+.item-btn-grey:hover,
+.item-btn-grey:focus {
+  background: #bbb;
+}
+.item-btn-grey:focus,
+.item-btn-grey:active {
+  background: #e4e5e6 !important;
+}
+
+.visit {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  padding-right: 16px;
+}
+.container-txt-btn {
+  margin-bottom: 40px;
+}
+.project-icon-div {
+  display: flex;
+  justify-content: flex-end;
+}
+.load-more {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  position: relative;
+  display: inline-block;
+}
+@media (min-width: 1280px) {
+  .load-more:hover,
+  .load-more:focus {
+    color: #00b068;
+  }
+}
+
+@media (max-width: 1279px) {
+  .load-more:focus,
+  .load-more:active {
+    color: inherit !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .load-more:focus:not(:hover),
+  .load-more:active:not(:hover) {
+    color: inherit !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .load-more {
+    font-size: 20px;
+  }
+}
+.project-div {
+  display: flex;
+  justify-content: center;
+}
+.load-more::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 107px;
+  height: 2px;
+  background-color: #00b068;
+  transform: translateX(-50%);
+}
+@media (min-width: 768px) {
+  .load-more::after {
+    width: 119px;
+  }
+}
+.is-hidden {
+  display: none;
+}
+@media (min-width: 1280px) {
+  .load-more:hover {
+    animation: pulse 1s infinite;
+  }
+}
+
+@media (hover: hover) {
+  .load-more:hover {
+    animation: pulse 1s infinite;
+  }
+}
+@media (min-width: 1280px) {
+  .item-btn-grey:hover {
+    animation: pulse 1s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.not-visible {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.not-visible.visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
