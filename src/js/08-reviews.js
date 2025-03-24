@@ -133,17 +133,17 @@ function changeBtnState() {
   nextIcon.style.transition = 'none';
 
   if (swiper.isEnd) {
-    nextIcon.style.stroke = 'var(--light-grey)';
-    backIcon.style.stroke = 'var(--black)';
+    nextIcon.style.stroke = '#e4e5e6';
+    backIcon.style.stroke = '#292929';
   }
   if (swiper.isBeginning) {
-    backIcon.style.stroke = 'var(--light-grey)';
-    nextIcon.style.stroke = 'var(--black)';
+    backIcon.style.stroke = '#e4e5e6';
+    nextIcon.style.stroke = '#292929';
   }
 
   if (!swiper.isEnd && !swiper.isBeginning) {
-    backIcon.style.stroke = 'var(--black)';
-    nextIcon.style.stroke = 'var(--black)';
+    backIcon.style.stroke = '#292929';
+    nextIcon.style.stroke = '#292929';
   }
 
   nextBtn.classList.toggle('disabled', swiper.isEnd);

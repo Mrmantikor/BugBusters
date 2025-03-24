@@ -11,12 +11,12 @@
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: light-dark(var(--black), var(--white));
+  color: var(--black);
   margin-bottom: 32px;
 }
 
 .footer-logo-part {
-  color: light-dark(var(--accet-green), var(--accet-green-dt));
+  color: var(--accet-green);
 }
 
 .footer-social-list {
@@ -32,13 +32,13 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: light-dark(var(--black), var(--white));
+  color: var(--black);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  color: light-dark(var(--accet-green), var(--accet-green-dt));
+  color: var(--accet-green);
 }
 
 .footer-wrapper {
@@ -52,7 +52,7 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
-  color: light-dark(var(--black), var(--white));
+  color: var(--black);
   max-width: 197px;
   margin: 0 auto;
 }

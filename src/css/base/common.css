@@ -1,7 +1,6 @@
 /* #region Clear Styles */
 
 :root {
-  /* color-scheme: light dark; */
   --black: #292929;
   --accet-green: #00b068;
   --white: #f0f0f0;
@@ -10,14 +9,16 @@
   --hover-green: #009156;
   --red: #e74a3b;
   --hover-grey: #bbbbbb;
-  --black-dt: #1e2023;
-  --accet-green-dt: #14c57c;
-  --white-dt: #f0f0f0;
-  --charcoal-dt: #2a2d32;
-  --dark-accet-dt: #204136;
-  --hover-green-dt: #009156;
-  --error: #e74a3b;
-  --hover-charcoal-dt: #3b3f45;
+}
+:root {
+  --black: #292929;
+  --accet-green: #00b068;
+  --white: #f0f0f0;
+  --light-grey: #e4e5e6;
+  --light-accet: #bcdfd1;
+  --hover-green: #009156;
+  --red: #e74a3b;
+  --hover-grey: #bbbbbb;
 }
 
 html {
@@ -26,9 +27,7 @@ html {
 }
 
 body {
-  background-color: light-dark(var(--white), var(--black-dt));
-
-  color-scheme: dark;
+  background-color: #f0f0f0;
 }
 
 h1,

@@ -48,37 +48,3 @@ function changeScrollButtonVisibility() {
   }
 }
 //#endregion
-
-const themeToggle = document.querySelector('#toggle-main');
-const body = document.body;
-
-function setTheme(theme) {
-  if (theme === 'dark') {
-    body.style.colorScheme = 'dark';
-    themeToggle.checked = true;
-  } else {
-    body.style.colorScheme = 'light';
-    themeToggle.checked = false;
-  }
-
-  localStorage.setItem('theme', theme);
-}
-
-function loadTheme() {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-    setTheme(savedTheme);
-  } else {
-    const prefersDark = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    ).matches;
-    setTheme(prefersDark ? 'dark' : 'light');
-  }
-}
-
-themeToggle.addEventListener('change', () => {
-  const newTheme = themeToggle.checked ? 'dark' : 'light';
-  setTheme(newTheme);
-});
-
-document.addEventListener('DOMContentLoaded', loadTheme);
