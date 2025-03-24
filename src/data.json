@@ -3,15 +3,15 @@
     {
       "name": "wallet webservice",
       "image": {
-        "1x": "./img/myproject/1.webp",
-        "2x": "./img/myproject/1@2x.webp"
+        "1x": "../src/img/myproject/1.webp",
+        "2x": "../src/img/myproject/1@2x.webp"
       }
     },
     {
       "name": "Green harvest webservice",
       "image": {
-        "1x": "/img/myproject/2.webp",
-        "2x": "/img/myproject/2@2x.webp"
+        "1x": "../../BugBusters-project/src/img/myproject/2.webp",
+        "2x": "../../BugBusters-project/src/img/myproject/2@2x.webp"
       }
     },
     {
