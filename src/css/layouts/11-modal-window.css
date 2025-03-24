@@ -34,7 +34,7 @@ body.modal-open {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: light-dark(#00b068, #14c57c);
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 .modal-message {
   margin-top: 16px;

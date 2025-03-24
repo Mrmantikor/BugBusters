@@ -16,7 +16,7 @@
 }
 
 .footer-logo-part {
-  color: var(--accet-green);
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 
 .footer-social-list {
@@ -32,13 +32,13 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: light-dark(var(--black), var(--white));
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  color: var(--accet-green);
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 
 .footer-wrapper {
@@ -52,7 +52,7 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--black);
+  color: light-dark(var(--black), var(--white));
   max-width: 197px;
   margin: 0 auto;
 }

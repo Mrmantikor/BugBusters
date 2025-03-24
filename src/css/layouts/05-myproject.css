@@ -11,6 +11,7 @@
   text-transform: uppercase;
   margin-bottom: 40px;
   text-align: center;
+  color: light-dark(var(--black), var(--white));
 }
 
 .projects-title_next {

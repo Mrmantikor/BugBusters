@@ -9,14 +9,14 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--black);
-  background-color: var(--light-accet);
+  color: light-dark(var(--black), var(--white));
+  background-color: light-dark(var(--light-accet), var(--dark-accet-dt));
   position: relative;
 }
 
 .marquee-second {
-  color: var(--accet-green);
-  background-color: var(--light-grey);
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
+  background-color: light-dark(var(--light-grey), var(--charcoal-dt));
   transform: rotate(2deg);
   z-index: -1;
 }
@@ -41,13 +41,13 @@
 .dot {
   width: 8px;
   height: 8px;
-  background-color: var(--accet-green);
+  background-color: light-dark(var(--accet-green), var(--accet-green-dt));
   border-radius: 2px;
   display: inline-block;
 }
 
 .dot-second {
-  background-color: var(--black);
+  background-color: light-dark(var(--black), var(--white));
 }
 
 @keyframes marqueeLine {
