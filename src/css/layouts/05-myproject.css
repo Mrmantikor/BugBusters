@@ -14,7 +14,7 @@
 }
 
 .projects-title_next {
-  color: var(--accent-cl);
+  color: var(--accet-green);
 }
 
 .projects-list_img {
@@ -59,15 +59,15 @@
   padding: 12px 24px;
   width: 125px;
   height: 48px;
-  background-color: var(--third-bcg);
+  background-color: var(--light-grey);
   text-decoration: none;
   cursor: pointer;
-  transition: all var(--time) var(--cubic);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-button_link:hover,
 .projects-button_link:focus {
-  background-color: var(--hover);
+  background-color: var(--hover-grey);
 }
 
 .projects-button_text {
@@ -75,12 +75,12 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--main-cl, var(--main-bcg));
+  color: var(--black, var(--white));
   margin-right: 12px;
 }
 
 .projects-button_icon {
-  stroke: var(--accent-cl);
+  stroke: var(--accet-green);
 }
 
 .projects-button_loading {
@@ -96,15 +96,15 @@
   line-height: 1.55;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-cl, var(--main-bcg));
-  background-color: var(--main-bcg, var(--main-cl));
+  color: var(--black, var(--white));
+  background-color: var(--white, var(--black));
   margin: auto;
-  transition: all var(--time) var(--cubic);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-button_loading:hover,
 .projects-button_loading:focus {
-  color: var(--accent-cl);
+  color: var(--accet-green);
 }
 
 .projects-button_loading::after {
@@ -116,7 +116,7 @@
   transform: translateX(-50%);
   width: 106px;
   height: 2px;
-  background-color: var(--accent-cl);
+  background-color: var(--accet-green);
 }
 
 @media only screen and (min-width: 768px) {
