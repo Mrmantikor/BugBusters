@@ -1,8 +1,6 @@
 @import 'izitoast/dist/css/iziToast.min.css';
 .work-together {
-  padding: 80px 0;
-  /* max-width: 360px;
-  margin: auto; */
+  padding: 80px 0 40px 0;
 
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -163,9 +161,7 @@
   letter-spacing: 0.04em;
   color: #e74a3b;
 }
-/* .work-together-input.valid {
-  color: #28a745;
-} */
+
 .work-together-textarea {
   min-height: 128px;
 
@@ -203,7 +199,6 @@
   transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
-/* Коли активна — показуємо */
 .map-wrapper.active {
   max-height: 500px;
   height: auto;

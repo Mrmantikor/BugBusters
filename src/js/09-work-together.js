@@ -1,8 +1,10 @@
 import iziToast from 'izitoast';
 import axios from 'axios';
+
 const form = document.querySelector(`#work-together-form`);
 const modalOverlay = document.querySelector(`#work-together-modal-window`);
 const { email, message, button } = form.elements;
+
 form.addEventListener(`submit`, clickHandler);
 email.addEventListener(`input`, validator);
 
@@ -90,7 +92,6 @@ window.initMap = async function () {
   const theme = isDark ? 'dark' : 'light';
   const mapStyle = await loadMapStyle(theme);
 
-  // 🔄 використовуємо глобальну змінну map
   map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 40.61589475533107, lng: -74.0637538196986 },
     zoom: 12,
