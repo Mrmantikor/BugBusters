@@ -136,10 +136,13 @@
   position: relative;
   display: inline-block;
 }
-.load-more:hover,
-.load-more:focus {
-  color: #00b068;
+@media (min-width: 1280px) {
+  .load-more:hover,
+  .load-more:focus {
+    color: #00b068;
+  }
 }
+
 @media (max-width: 1279px) {
   .load-more:focus,
   .load-more:active {
@@ -181,19 +184,23 @@
 .is-hidden {
   display: none;
 }
-
-.load-more:hover {
-  animation: pulse 1s infinite;
-}
-@media (hover: hover) {
+@media (min-width: 1280px) {
   .load-more:hover {
     animation: pulse 1s infinite;
   }
 }
 
-.item-btn-grey:hover {
-  animation: pulse 1s infinite;
+@media (hover: hover) {
+  .load-more:hover {
+    animation: pulse 1s infinite;
+  }
 }
+@media (min-width: 1280px) {
+  .item-btn-grey:hover {
+    animation: pulse 1s infinite;
+  }
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);

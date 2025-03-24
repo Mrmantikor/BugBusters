@@ -1,5 +1,5 @@
-import data from '../data.json';
-import projSvg from '../img/sprite.svg';
+import data from '/data.json';
+import projSvg from '/img/sprite.svg';
 
 const projectSection = document.querySelector('.project-list');
 const btnLoadMore = document.querySelector('.load-more');
