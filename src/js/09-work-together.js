@@ -89,8 +89,9 @@ async function loadMapStyle(theme) {
 }
 
 window.initMap = async function () {
-  const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const theme = isDark ? 'dark' : 'light';
+  // const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  // const theme = isDark ? 'dark' : 'light';
+  const theme = document.body.style.colorScheme === 'dark' ? 'dark' : 'light';
   const mapStyle = await loadMapStyle(theme);
 
   map = new google.maps.Map(document.getElementById('map'), {
@@ -138,6 +139,25 @@ window.addEventListener('resize', () => {
     const wrapper = moveMap();
     wrapper.classList.add('active');
   }
+});
+
+const observer = new MutationObserver(async mutations => {
+  for (const mutation of mutations) {
+    if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+      const theme =
+        document.body.style.colorScheme === 'dark' ? 'dark' : 'light';
+
+      if (mapLoaded && map) {
+        const newStyle = await loadMapStyle(theme);
+        map.setOptions({ styles: newStyle });
+      }
+    }
+  }
+});
+
+observer.observe(document.body, {
+  attributes: true,
+  attributeFilter: ['style'],
 });
 
 window
