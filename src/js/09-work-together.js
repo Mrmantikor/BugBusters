@@ -6,14 +6,15 @@ const modalOverlay = document.querySelector(`#work-together-modal-window`);
 const { email, message, button } = form.elements;
 
 form.addEventListener(`submit`, clickHandler);
-email.addEventListener(`input`, validator);
 
-function validator() {
-  if (email.validity.valid) {
-    email.textContent = '✔';
-    email.classList.add('valid');
-  }
-}
+// email.addEventListener(`input`, validator);
+
+// function validator() {
+//   if (email.validity.valid) {
+//     email.classList.add('valid');
+//   }
+// }
+
 function isInputValid(form) {
   const { email, message } = form.elements;
   return email.value.trim() && message.value.trim() ? true : false;
