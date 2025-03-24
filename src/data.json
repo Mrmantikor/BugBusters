@@ -3,8 +3,8 @@
     {
       "name": "wallet webservice",
       "image": {
-        "1x": "/img/myproject/1.webp",
-        "2x": "/img/myproject/1@2x.webp"
+        "1x": "./img/myproject/1.webp",
+        "2x": "./img/myproject/1@2x.webp"
       }
     },
     {
