@@ -140,5 +140,49 @@
   .benefits-list-item:nth-child(4) {
     grid-row: 2;
   }
+    .benefits {
+        position: relative;
+        margin-top: 82px;
+        margin-bottom: 82px;
+    }
+
+    .benefits-title {
+        position: relative;
+        display: inline-block;
+        max-width: 681px;
+    }
+
+    /* .benefits-decor {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -116px;
+        width: 526px;
+        height: 408px;
+    } */
+
+    .benefits-list {
+        margin-top: -104px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .benefits-list-item:nth-child(1) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .benefits-list-item:nth-child(4) {
+        grid-row: 2; 
+    }
+
+    .benefits-container{
+        position: relative;
+        background-image: url('/img/06-benefits/decor-benefits.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 526px 408px;
+        padding-top: 116px;
+    }
 }
 /* #endregion for Desktop */

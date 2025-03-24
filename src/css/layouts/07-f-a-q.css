@@ -5,6 +5,7 @@
   margin-bottom: 40px;
 }
 
+
 .faq-decor {
   display: none;
 }
@@ -70,6 +71,10 @@
   margin-bottom: 0px;
   border: none;
   border-bottom: 1px solid var(--light-grey);
+    margin-bottom: 0px;
+    border: none;
+    border-bottom: 1px solid #e4e5e6;
+    background-color: transparent;
 }
 
 .faq-list-item.is-active .faq-icon {
@@ -131,5 +136,30 @@
     bottom: 0;
     display: block;
   }
+}
+/* #endregion for Desktop */
+    .faq {
+        position: relative;
+        margin-top: 82px;
+        margin-bottom: 82px;
+    }
+
+    .faq-title {
+        position: relative; 
+    }
+
+    .accordion-container {
+        width: 592px;
+        margin-top: -96px; 
+        margin-left: auto; 
+ 
+    }
+
+    .faq-container{
+        background-image: url('/img/07-f-a-q/decor-faq.png');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+    }
+
 }
 /* #endregion for Desktop */
