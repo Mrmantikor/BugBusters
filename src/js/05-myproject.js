@@ -257,7 +257,7 @@ function createMarkupProjects(images) {
             >
               <span class="projects-button_text">VISIT</span>
               <svg class="projects-button_icon" width="24" height="24">
-                <use href="${icon}#icon-arrow-projects"></use>
+                <use href="${icon}#icon-arrow"></use>
               </svg>
             </a>
           </div>
