@@ -5,11 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(TextPlugin);
 
   const words = [
-    'Fullstack Developer',
-    'JavaScript Developer',
-    'Frontend Developer',
+  
     'Backend Developer',
   ];
+  // 'Fullstack Developer',
+    // 'JavaScript Developer',
+    // 'Frontend Developer',
 
   const hiElement = document.querySelector('.hero-hi');
   const textElement = document.querySelector('.hero-label');
