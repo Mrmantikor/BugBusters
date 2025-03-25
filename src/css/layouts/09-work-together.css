@@ -176,7 +176,7 @@
 
 .work-together-button {
   height: 48px;
-  width: 320px;
+  max-width: 320px;
   border-radius: 8px;
   font-size: 16px;
   background-color: light-dark(var(--accet-green), var(--accet-green-dt));
