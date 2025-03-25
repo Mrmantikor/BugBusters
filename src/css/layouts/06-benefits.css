@@ -67,6 +67,7 @@
     letter-spacing: 0.02em;
     margin-bottom: 0px;
     max-width: 704px;
+    color: light-dark(var(--black), var(--white));
   }
 
   .benefits-list {

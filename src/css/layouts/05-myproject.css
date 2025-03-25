@@ -15,9 +15,12 @@
 }
 
 .projects-title_next {
-  color: var(--accet-green);
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 
+.projects-img_descr {
+  color: light-dark(var(--black), var(--white));
+}
 .projects-list_img {
   display: flex;
   flex-direction: column;
@@ -37,6 +40,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  color: light-dark(var(--black), var(--white));
 }
 
 .projects-blok_descr {
@@ -60,15 +64,16 @@
   padding: 12px 24px;
   width: 125px;
   height: 48px;
-  background-color: var(--light-grey);
+  background-color: light-dark(var(--light-grey), var(--charcoal-dt));
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-button_link:hover,
 .projects-button_link:focus {
-  background-color: var(--hover-grey);
+  background-color: light-dark(var(--hover-grey), var(--hover-charcoal-dt));
 }
 
 .projects-button_text {
@@ -76,12 +81,12 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--black, var(--white));
+  color: light-dark(var(--black), var(--white));
   margin-right: 12px;
 }
 
 .projects-button_icon {
-  stroke: var(--accet-green);
+  stroke: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 
 .projects-button_loading {
@@ -97,8 +102,8 @@
   line-height: 1.55;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black, var(--white));
-  background-color: var(--white, var(--black));
+  color: light-dark(var(--black), var(--white));
+  background-color: light-dark(var(--white), var(--black-dt));
   margin: auto;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -117,7 +122,7 @@
   transform: translateX(-50%);
   width: 106px;
   height: 2px;
-  background-color: var(--accet-green);
+  background-color: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 
 @media only screen and (min-width: 768px) {
