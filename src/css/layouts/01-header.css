@@ -69,7 +69,7 @@
 }
 
 .nav-link:hover,
-.nav-list:focus {
+.nav-link:focus {
   color: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 
@@ -98,7 +98,7 @@
   width: 48px;
   height: 24px;
   margin: 0;
-  background-color: light-dark(var(--light-grey), --dark-accet-dt);
+  background-color: var(--light-grey);
   border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
