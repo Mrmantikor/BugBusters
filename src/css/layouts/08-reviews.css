@@ -70,6 +70,7 @@
   font-size: 22px;
   border-radius: 8px;
   border: 1px solid light-dark(var(--black), var(--white));
+  stroke: light-dark(var(--black), var(--white-dt));
   background-color: transparent;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -78,6 +79,7 @@
 .reviews-btn-right:disabled {
   border: 1px solid light-dark(var(--light-grey), var(--white));
   cursor: not-allowed;
+  stroke: light-dark(var(--light-grey), var(--charcoal-dt));
 }
 
 .reviews-btn-left:not(:disabled):hover,

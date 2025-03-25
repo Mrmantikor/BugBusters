@@ -11,7 +11,7 @@
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--black);
+  color: light-dark(var(--black), var(--white));
   margin-bottom: 32px;
 }
 

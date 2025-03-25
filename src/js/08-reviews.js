@@ -126,28 +126,7 @@ function changeBtnState() {
   nextBtn.disabled = swiper.isEnd;
   prevBtn.disabled = swiper.isBeginning;
 
-  const backIcon = document.querySelector('.js-btn-left');
-  const nextIcon = document.querySelector('.js-btn-right');
-
-  backIcon.style.transition = 'none';
-  nextIcon.style.transition = 'none';
-
-  if (swiper.isEnd) {
-    nextIcon.style.stroke = '#e4e5e6';
-    backIcon.style.stroke = '#292929';
-  }
-  if (swiper.isBeginning) {
-    backIcon.style.stroke = '#e4e5e6';
-    nextIcon.style.stroke = '#292929';
-  }
-
-  if (!swiper.isEnd && !swiper.isBeginning) {
-    backIcon.style.stroke = '#292929';
-    nextIcon.style.stroke = '#292929';
-  }
-
   nextBtn.classList.toggle('disabled', swiper.isEnd);
   prevBtn.classList.toggle('disabled', swiper.isBeginning);
 }
-
 initReviewsSwiper();
