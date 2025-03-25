@@ -179,10 +179,12 @@
   }
 
   .about-education {
-    width: 384px;
+    /* width: 384px; */
+    width: calc((100% - 32px) / 2);
   }
 
   .about-role {
-    width: 384px;
+    /* width: 384px; */
+    width: calc((100% - 32px) / 2);
   }
 }

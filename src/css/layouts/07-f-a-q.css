@@ -23,6 +23,7 @@
 .faq-list-item .faq-list-title {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.56;
   letter-spacing: 0.03em;
   text-transform: uppercase;
