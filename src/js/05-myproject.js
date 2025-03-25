@@ -3,54 +3,54 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 import icon from '../img/sprite.svg';
 
-import projectDesk03 from '/img/05-myproject/projects-desk-03-min.png';
-import projectDesk03_2x from '/img/05-myproject/projects-desk-03@2x-min.png';
-import projectMob03 from '/img/05-myproject/projects-mob-03-min.png';
-import projectMob03_2x from '/img/05-myproject/projects-mob-03@2x-min.png';
-import projectTabl03 from '/img/05-myproject/projects-tabl-03-min.png';
-import projectTabl03_2x from '/img/05-myproject/projects-tabl-03@2x-min.png';
+import projectDesk03 from '/img/05-myproject/projects-desk-03-min.avif';
+import projectDesk03_2x from '/img/05-myproject/projects-desk-03@2x-min.avif';
+import projectMob03 from '/img/05-myproject/projects-mob-03-min.avif';
+import projectMob03_2x from '/img/05-myproject/projects-mob-03@2x-min.avif';
+import projectTabl03 from '/img/05-myproject/projects-tabl-03-min.avif';
+import projectTabl03_2x from '/img/05-myproject/projects-tabl-03@2x-min.avif';
 
-import projectDesk04 from '/img/05-myproject/projects-desk-04-min.png';
-import projectDesk04_2x from '/img/05-myproject/projects-desk-04@2x-min.png';
-import projectMob04 from '/img/05-myproject/projects-mob-04-min.png';
-import projectMob04_2x from '/img/05-myproject/projects-mob-04@2x-min.png';
-import projectTabl04 from '/img/05-myproject/projects-tabl-04-min.png';
-import projectTabl04_2x from '/img/05-myproject/projects-tabl-04@2x-min.png';
+import projectDesk04 from '/img/05-myproject/projects-desk-04-min.avif';
+import projectDesk04_2x from '/img/05-myproject/projects-desk-04@2x-min.avif';
+import projectMob04 from '/img/05-myproject/projects-mob-04-min.avif';
+import projectMob04_2x from '/img/05-myproject/projects-mob-04@2x-min.avif';
+import projectTabl04 from '/img/05-myproject/projects-tabl-04-min.avif';
+import projectTabl04_2x from '/img/05-myproject/projects-tabl-04@2x-min.avif';
 
-import projectDesk05 from '/img/05-myproject/projects-desk-05-min.png';
-import projectDesk05_2x from '/img/05-myproject/projects-desk-05@2x-min.png';
-import projectMob05 from '/img/05-myproject/projects-mob-05-min.png';
-import projectMob05_2x from '/img/05-myproject/projects-mob-05@2x-min.png';
-import projectTabl05 from '/img/05-myproject/projects-tabl-05-min.png';
-import projectTabl05_2x from '/img/05-myproject/projects-tabl-05@2x-min.png';
+import projectDesk05 from '/img/05-myproject/projects-desk-05-min.avif';
+import projectDesk05_2x from '/img/05-myproject/projects-desk-05@2x-min.avif';
+import projectMob05 from '/img/05-myproject/projects-mob-05-min.avif';
+import projectMob05_2x from '/img/05-myproject/projects-mob-05@2x-min.avif';
+import projectTabl05 from '/img/05-myproject/projects-tabl-05-min.avif';
+import projectTabl05_2x from '/img/05-myproject/projects-tabl-05@2x-min.avif';
 
-import projectDesk06 from '/img/05-myproject/projects-desk-06-min.png';
-import projectDesk06_2x from '/img/05-myproject/projects-desk-06@2x-min.png';
-import projectMob06 from '/img/05-myproject/projects-mob-06-min.png';
-import projectMob06_2x from '/img/05-myproject/projects-mob-06@2x-min.png';
-import projectTabl06 from '/img/05-myproject/projects-tabl-06-min.png';
-import projectTabl06_2x from '/img/05-myproject/projects-tabl-06@2x-min.png';
+import projectDesk06 from '/img/05-myproject/projects-desk-06-min.avif';
+import projectDesk06_2x from '/img/05-myproject/projects-desk-06@2x-min.avif';
+import projectMob06 from '/img/05-myproject/projects-mob-06-min.avif';
+import projectMob06_2x from '/img/05-myproject/projects-mob-06@2x-min.avif';
+import projectTabl06 from '/img/05-myproject/projects-tabl-06-min.avif';
+import projectTabl06_2x from '/img/05-myproject/projects-tabl-06@2x-min.avif';
 
-import projectDesk07 from '/img/05-myproject/projects-desk-07-min.png';
-import projectDesk07_2x from '/img/05-myproject/projects-desk-07@2x-min.png';
-import projectMob07 from '/img/05-myproject/projects-mob-07-min.png';
-import projectMob07_2x from '/img/05-myproject/projects-mob-07@2x-min.png';
-import projectTabl07 from '/img/05-myproject/projects-tabl-07-min.png';
-import projectTabl07_2x from '/img/05-myproject/projects-tabl-07@2x-min.png';
+import projectDesk07 from '/img/05-myproject/projects-desk-07-min.avif';
+import projectDesk07_2x from '/img/05-myproject/projects-desk-07@2x-min.avif';
+import projectMob07 from '/img/05-myproject/projects-mob-07-min.avif';
+import projectMob07_2x from '/img/05-myproject/projects-mob-07@2x-min.avif';
+import projectTabl07 from '/img/05-myproject/projects-tabl-07-min.avif';
+import projectTabl07_2x from '/img/05-myproject/projects-tabl-07@2x-min.avif';
 
-import projectDesk08 from '/img/05-myproject/projects-desk-08-min.png';
-import projectDesk08_2x from '/img/05-myproject/projects-desk-08@2x-min.png';
-import projectMob08 from '/img/05-myproject/projects-mob-08-min.png';
-import projectMob08_2x from '/img/05-myproject/projects-mob-08@2x-min.png';
-import projectTabl08 from '/img/05-myproject/projects-tabl-08-min.png';
-import projectTabl08_2x from '/img/05-myproject/projects-tabl-08@2x-min.png';
+import projectDesk08 from '/img/05-myproject/projects-desk-08-min.avif';
+import projectDesk08_2x from '/img/05-myproject/projects-desk-08@2x-min.avif';
+import projectMob08 from '/img/05-myproject/projects-mob-08-min.avif';
+import projectMob08_2x from '/img/05-myproject/projects-mob-08@2x-min.avif';
+import projectTabl08 from '/img/05-myproject/projects-tabl-08-min.avif';
+import projectTabl08_2x from '/img/05-myproject/projects-tabl-08@2x-min.avif';
 
-import projectDesk09 from '/img/05-myproject/projects-desk-09-min.png';
-import projectDesk09_2x from '/img/05-myproject/projects-desk-09@2x-min.png';
-import projectMob09 from '/img/05-myproject/projects-mob-09-min.png';
-import projectMob09_2x from '/img/05-myproject/projects-mob-09@2x-min.png';
-import projectTabl09 from '/img/05-myproject/projects-tabl-09-min.png';
-import projectTabl09_2x from '/img/05-myproject/projects-tabl-09@2x-min.png';
+import projectDesk09 from '/img/05-myproject/projects-desk-09-min.avif';
+import projectDesk09_2x from '/img/05-myproject/projects-desk-09@2x-min.avif';
+import projectMob09 from '/img/05-myproject/projects-mob-09-min.avif';
+import projectMob09_2x from '/img/05-myproject/projects-mob-09@2x-min.avif';
+import projectTabl09 from '/img/05-myproject/projects-tabl-09-min.avif';
+import projectTabl09_2x from '/img/05-myproject/projects-tabl-09@2x-min.avif';
 
 const images = [
   {
