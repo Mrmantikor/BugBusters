@@ -84,14 +84,15 @@
     flex-direction: column;
   }
 }
-.work-together-contact-item:hover {
-  color: light-dark(var(--accet-green), var(--accet-green-dt));
-}
 .work-together-contact-link {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 16px;
+}
+.work-together-contact-link:focus,
+.work-together-contact-link:hover {
+  color: light-dark(var(--accet-green), var(--accet-green-dt));
 }
 .work-together-contact-link:after {
   color: light-dark(var(--black), var(--white));
