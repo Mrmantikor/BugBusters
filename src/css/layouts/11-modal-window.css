@@ -23,11 +23,42 @@ body.modal-open {
   border-radius: 16px;
   padding: 64px;
   width: 492px;
+  border-radius: 16px;
+  padding: 48px 32px;
+  width: 320px;
+  min-height: 328px;
   background: light-dark(var(--white), var(--black));
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  .work-together-modal-inner {
+    padding: 64px;
+    width: 492px;
+    min-height: 280px;
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+@media (min-width: 768px) {
+  .modal-close-btn {
+    right: 20px;
+    top: 20px;
+  }
+}
+
+.work-together-modal-icon {
+  width: 24px;
+  height: 24px;
+
+  stroke: light-dark(var(--black), var(--white));
+}
+
 .modal-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -39,6 +70,7 @@ body.modal-open {
   color: light-dark(var(--accet-green), var(--accet-green-dt));
   margin-bottom: 16px;
 }
+
 .modal-message {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -61,5 +93,8 @@ body.modal-open {
   width: 24px;
   height: 24px;
 
-  stroke: light-dark(var(--black), var(--white));
+@media (min-width: 768px) {
+  .modal-message {
+    margin-top: 20px;
+  }
 }
