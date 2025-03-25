@@ -175,7 +175,7 @@
 
   .about-text {
     gap: 136px;
-    padding-left: 210px;
+    /* padding-left: 210px; */
   }
 
   .about-education {
