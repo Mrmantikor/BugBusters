@@ -89,6 +89,7 @@ body.modal-open {
 .modal-close-btn:hover {
   transform: scale(1.3);
 }
+
 .work-together-modal-icon {
   width: 24px;
   height: 24px;
@@ -97,4 +98,5 @@ body.modal-open {
   .modal-message {
     margin-top: 20px;
   }
+}
 }
