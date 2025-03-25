@@ -1,7 +1,6 @@
 import './js/01-header';
 import './js/02-hero';
 import './js/03-aboutme';
-import './js/04-techskills';
 import './js/05-myproject';
 import './js/06-benefits';
 import './js/07-f-a-q';
