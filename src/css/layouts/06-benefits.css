@@ -112,7 +112,7 @@
   .benefits-title {
     position: relative;
     display: inline-block;
-    max-width: 681px;
+    /* max-width: 681px; */
   }
 
   .benefits-list {
