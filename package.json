@@ -1,11 +1,11 @@
 {
-  "name": "BugBusters-project",
+  "name": "BugBusters",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/BugBusters-project/",
+    "build": "vite build --base=/BugBusters/",
     "preview": "vite preview"
   },
   "devDependencies": {
