@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio 2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/BugBusters/assets/favicon-Cggt_4H6.svg" type="image/svg+xml" />
+    <script type="module" crossorigin src="/BugBusters/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/BugBusters/assets/vendor-CB8PsLOs.js">
+    <link rel="stylesheet" crossorigin href="/BugBusters/assets/vendor-BUK5Y4Ob.css">
+    <link rel="stylesheet" crossorigin href="/BugBusters/assets/index-C34SnLOG.css">
+  </head>
+  <body>
+    <header class="header hdr">
+  <div class="container header-container">
+    <div class="menu-container">
+      <a href="index.html" class="header-logo"
+        >LLOYD<span class="header-logo-span">JEFFERSON.</span></a
+      >
+      <!-- Style-Toggle-Button-Theme -->
+      <div class="toggle-main">
+        <input type="checkbox" id="toggle-main" />
+        <label for="toggle-main"> </label>
+      </div>
+      <!-- Burger-Menu -->
+      <div class="burger js-menu js-menu-close" data-menu-button>
+        <span class="burger-icon"></span>
+      </div>
+      <div class="nav-container">
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#myproject" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#work-together" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- To-Top -->
+<button
+  class="top js-transparent scroll-to-top"
+  type="button"
+  aria-label="Back to top"
+>
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12 19V5M5 12l7-7 7 7"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</button>
+
+    <main>
+      <section class="section-hero hero">
+  <div class="container hero-wrap">
+    <div class="hero-intro">
+      <div class="hero-text">
+        <h1 class="hero-heading">Hello, I am</h1>
+        <p class="hero-anim">
+          <span class="hero-hi"></span>
+          <span class="hero-label"></span>
+        </p>
+      </div>
+      <a class="hero-cta" href="#work-together">
+        <svg class="hero-arrow" width="45" height="16">
+          <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-arrow-hero"></use>
+        </svg>
+        <span class="hero-cta-text">Order the project</span>
+      </a>
+    </div>
+    <div class="hero-content">
+      <picture>
+        <source
+          srcset="/BugBusters/assets/dev-hero-BPxNhmtD.avif 1x, /BugBusters/assets/dev-hero@2x-KT5uljaB.avif 2x"
+          media="(min-width: 1280px)"
+          type="image/avif"
+        />
+        <img
+          loading="lazy"
+          src="/BugBusters/assets/dev-hero-BPxNhmtD.avif"
+          alt="Frontend Developer"
+          width="592"
+          height="444"
+          class="hero-pic"
+        />
+      </picture>
+      <p class="hero-desc">
+        I work with people all over the world to create
+        <span class="hero-span">impressive</span> and
+        <span class="hero-span">functional websites</span>
+        that reflect each client’s unique personality.
+      </p>
+    </div>
+  </div>
+  <ul class="hero-social">
+    <li class="hero-social-item">
+      <a
+        href="https://www.instagram.com/goitclub/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit my Instagram"
+        >Instagram</a
+      >
+    </li>
+    <li class="hero-social-item">
+      <a
+        href="https://www.facebook.com/goITclub/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit my Facebook"
+        >Facebook</a
+      >
+    </li>
+    <li class="hero-social-item">
+      <a
+        href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit my LinkedIn"
+        >LinkedIn</a
+      >
+    </li>
+    <li class="hero-social-item">
+      <a
+        href="https://github.com/Mrmantikor"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit my GitHub"
+        >GitHub</a
+      >
+    </li>
+  </ul>
+</section>
+
+      <section id="about" class="about">
+  <div class="container about-container">
+    <h2 class="about-h2">ABOUT <span class="about-h2-me">ME</span></h2>
+    <div class="about-content">
+      <div class="about-image">
+        <picture>
+          <source
+            srcset="/BugBusters/assets/img-desktop1x-BbC1sjvR.avif 1x, /BugBusters/assets/img-desktop2x-CiVcPtoW.avif 2x"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="/BugBusters/assets/img-tablet1x-NmaD7shP.avif 1x, /BugBusters/assets/img-tablet2x-CkQCP6wX.avif 2x"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="about-img"
+            loading="lazy"
+            srcset="/BugBusters/assets/img-mob2x-B-rXlpvx.avif 2x"
+            src="/BugBusters/assets/img-mob1x-yx35cZ3H.avif"
+            alt="Me"
+          />
+        </picture>
+      </div>
+      <div class="about-bio-text">
+        <h3 class="about-title">BIO</h3>
+        <p class="about-p">
+          I'm Lloyd Jefferson, a talented programmer specializing in software
+          development. My expertise spans various programming languages and
+          technologies, and I am dedicated to continually enhancing my skills. I
+          thrive on seeking unconventional and creative solutions to problems,
+          leveraging a high level of analytical skills to effectively tackle
+          even the most challenging tasks.
+        </p>
+        <p class="about-p">
+          Able to work both independently and in a team. I can effectively
+          cooperate with colleagues, exchanging ideas and finding optimal
+          solutions. Professional maturity allows you to calmly cope with
+          challenges and stressful situations, while maintaining a high quality
+          of work. I am always looking for opportunities for self-improvement. I
+          actively study new technologies and practices to stay abreast of the
+          latest innovations. I have a strong understanding of various
+          programming languages, frameworks and architectural concepts that
+          allow me to create efficient and scalable software.
+        </p>
+      </div>
+      <div class="about-text">
+        <div class="about-education">
+          <h3 class="about-title">EDUCATION</h3>
+          <ul class="about-list">
+            <li class="about-text">
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </li>
+            <li class="about-text">
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </li>
+            <li class="about-text">
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+            </li>
+          </ul>
+        </div>
+        <div class="about-role">
+          <h3 class="about-title">ROLE</h3>
+          <ul class="about-list">
+            <li class="about-text">Frontend development</li>
+            <li class="about-text">HeadlessCMS, Wordpress</li>
+            <li class="about-text">Blender (enjoy)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="tech-skills">
+  <h2 class="tech-skills-title visually-hidden">Tech skills</h2>
+
+  <div class="tech-skills-marquee marquee-first">
+    <p class="tech-skills-line">
+      <span class="dot"></span>
+      <span>HTML/CSS</span>
+      <span class="dot"></span>
+      <span>JavaScript</span>
+      <span class="dot"></span>
+      <span>React</span>
+      <span class="dot"></span>
+      <span>Node.js</span>
+      <span class="dot"></span>
+      <span>React Native</span>
+      <span class="dot"></span>
+      <span>TypeScript</span>
+      <span class="dot"></span>
+      <span>HTML/CSS</span>
+      <span class="dot"></span>
+      <span>JavaScript</span>
+      <span class="dot"></span>
+      <span>React</span>
+      <span class="dot"></span>
+      <span>Node.js</span>
+      <span class="dot"></span>
+      <span>React Native</span>
+      <span class="dot"></span>
+      <span>TypeScript&nbsp;</span>
+    </p>
+    <p class="tech-skills-line">
+      <span class="dot"></span>
+      <span>HTML/CSS</span>
+      <span class="dot"></span>
+      <span>JavaScript</span>
+      <span class="dot"></span>
+      <span>React</span>
+      <span class="dot"></span>
+      <span>Node.js</span>
+      <span class="dot"></span>
+      <span>React Native</span>
+      <span class="dot"></span>
+      <span>TypeScript</span>
+      <span class="dot"></span>
+      <span>HTML/CSS</span>
+      <span class="dot"></span>
+      <span>JavaScript</span>
+      <span class="dot"></span>
+      <span>React</span>
+      <span class="dot"></span>
+      <span>Node.js</span>
+      <span class="dot"></span>
+      <span>React Native</span>
+      <span class="dot"></span>
+      <span>TypeScript&nbsp;</span>
+    </p>
+  </div>
+
+  <div class="tech-skills-marquee marquee-second">
+    <p class="tech-skills-line line-second">
+      <span class="dot dot-second"></span>
+      <span>HTML/CSS</span>
+      <span class="dot dot-second"></span>
+      <span>JavaScript</span>
+      <span class="dot dot-second"></span>
+      <span>React</span>
+      <span class="dot dot-second"></span>
+      <span>Node.js</span>
+      <span class="dot dot-second"></span>
+      <span>React Native</span>
+      <span class="dot dot-second"></span>
+      <span>TypeScript</span>
+      <span class="dot dot-second"></span>
+      <span>HTML/CSS</span>
+      <span class="dot dot-second"></span>
+      <span>JavaScript</span>
+      <span class="dot dot-second"></span>
+      <span>React</span>
+      <span class="dot dot-second"></span>
+      <span>Node.js</span>
+      <span class="dot dot-second"></span>
+      <span>React Native</span>
+      <span class="dot dot-second"></span>
+      <span>TypeScript&nbsp;</span>
+    </p>
+    <p class="tech-skills-line line-second">
+      <span class="dot dot-second"></span>
+      <span>HTML/CSS</span>
+      <span class="dot dot-second"></span>
+      <span>JavaScript</span>
+      <span class="dot dot-second"></span>
+      <span>React</span>
+      <span class="dot dot-second"></span>
+      <span>Node.js</span>
+      <span class="dot dot-second"></span>
+      <span>React Native</span>
+      <span class="dot dot-second"></span>
+      <span>TypeScript</span>
+      <span class="dot dot-second"></span>
+      <span>HTML/CSS</span>
+      <span class="dot dot-second"></span>
+      <span>JavaScript</span>
+      <span class="dot dot-second"></span>
+      <span>React</span>
+      <span class="dot dot-second"></span>
+      <span>Node.js</span>
+      <span class="dot dot-second"></span>
+      <span>React Native</span>
+      <span class="dot dot-second"></span>
+      <span>TypeScript&nbsp;</span>
+    </p>
+  </div>
+</section>
+      <section class="section-projects prj" id="myproject">
+  <div class="container">
+    <h2 class="projects-title">
+      my <span class="projects-title_next">projects</span>
+    </h2>
+
+    <ul class="projects-list_img">
+      <li>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="/BugBusters/assets/projects-mob-00-min-CePc362e.avif 1x, /BugBusters/assets/projects-mob-00@2x-min-Cql-gQBk.avif 2x"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="/BugBusters/assets/projects-tabl-00-min-DOWiZ9CS.avif 1x, /BugBusters/assets/projects-tabl-00@2x-min-CjPWADnO.avif 2x"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/BugBusters/assets/projects-desk-00-min-MgLgOVMo.avif 1x, /BugBusters/assets/projects-desk-00@2x-min-B1oCziRY.avif 2x"
+          />
+          <img
+            class="projects-img"
+            src="/BugBusters/assets/projects-desk-00-min-MgLgOVMo.avif"
+            alt="Wallet webservice"
+          />
+        </picture>
+        <div class="projects-blok_descr">
+          <p class="projects-img_descr">React, JavaScript, Node JS, Git</p>
+          <div class="projects-box_descr">
+            <h3 class="projects-img_title">Wallet webservice</h3>
+            <a
+              href="https://lika060.github.io/BugBusters-project/"
+              class="projects-button_link"
+              target="_blank"
+            >
+              <span class="projects-button_text">VISIT</span>
+              <svg class="projects-button_icon" width="24" height="24">
+                <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="/BugBusters/assets/projects-mob-01-min-DenaoJ6j.avif 1x, /BugBusters/assets/projects-mob-01@2x-min-Drg21siu.avif 2x"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="/BugBusters/assets/projects-tabl-01-min-ca31_k_q.avif 1x, /BugBusters/assets/projects-tabl-01@2x-min-BYvLcI_G.avif 2x"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/BugBusters/assets/projects-desk-01-min-nl0eF4Hf.avif 1x, /BugBusters/assets/projects-desk-01@2x-min-K2NlExLU.avif 2x"
+          />
+          <img
+            class="projects-img"
+            src="/BugBusters/assets/projects-desk-01-min-nl0eF4Hf.avif"
+            alt="Green harvest webservice"
+          />
+        </picture>
+        <div class="projects-blok_descr">
+          <p class="projects-img_descr">React, JavaScript, Node JS, Git</p>
+          <div class="projects-box_descr">
+            <h3 class="projects-img_title">Green harvest webservice</h3>
+            <a
+              href="https://lika060.github.io/BugBusters-project/"
+              class="projects-button_link"
+              target="_blank"
+            >
+              <span class="projects-button_text">VISIT</span>
+              <svg class="projects-button_icon" width="24" height="24">
+                <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="/BugBusters/assets/projects-mob-02-min-DX09wGT6.avif 1x, /BugBusters/assets/projects-mob-02@2x-min-LLrcMES7.avif 2x"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="/BugBusters/assets/projects-tabl-02-min-DTvmSK2g.avif 1x, /BugBusters/assets/projects-tabl-02@2x-min-Cnw2DW1g.avif 2x"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/BugBusters/assets/projects-desk-02-min-3kcqJ0hf.avif 1x, /BugBusters/assets/projects-desk-02@2x-min-CdOY1wbH.avif 2x"
+          />
+          <img
+            class="projects-img"
+            src="/BugBusters/assets/projects-desk-02-min-3kcqJ0hf.avif"
+            alt="English Exellence website"
+          />
+        </picture>
+        <div class="projects-blok_descr">
+          <p class="projects-img_descr">React, JavaScript, Node JS, Git</p>
+          <div class="projects-box_descr">
+            <h3 class="projects-img_title">English Exellence website</h3>
+            <a
+              href="https://lika060.github.io/BugBusters-project/"
+              class="projects-button_link"
+              target="_blank"
+            >
+              <span class="projects-button_text">VISIT</span>
+              <svg class="projects-button_icon" width="24" height="24">
+                <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="box-loader"><span class="loader"></span></div>
+
+    <button type="button" class="projects-button_loading">LOAD MORE</button>
+  </div>
+</section>
+
+      <section class="benefits">
+    <div class="container benefits-container">
+        <h2 class="benefits-title"><span class="title-green-word">Benefits</span> of working with me</h2>
+        <ul class="benefits-list">
+            <li class="benefits-list-item">
+                <svg class="benefits-icon" width="24" height="24">
+                    <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-user-01"></use>
+                </svg>
+                <p class="benefits-list-title">Expertise</p>
+                <p class="benefits-list-text">With extensive experience in development, I have a deep understanding of
+                    programming and website development.</p>
+            </li>
+            <li class="benefits-list-item">
+                <svg class="benefits-icon" width="24" height="24">
+                    <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-message-chat-circle"></use>
+                </svg>
+                <p class="benefits-list-title">Communication</p>
+                <p class="benefits-list-text">Understanding your needs and wants is my priority and I am always
+                    available for discussions and open to corrections.</p>
+            </li>
+            <li class="benefits-list-item">
+                <svg class="benefits-icon" width="24" height="24">
+                    <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-brush"></use>
+                </svg>
+                <p class="benefits-list-title">Art</p>
+                <p class="benefits-list-text">Thanks to my creative nature, I am ready to accept challenges and help you
+                    bring your ideas to life.</p>
+            </li>
+            <li class="benefits-list-item">
+                <svg class="benefits-icon" width="24" height="24">
+                    <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-hourglass"></use>
+                </svg>
+                <p class="benefits-list-title">Urgent execution</p>
+                <p class="benefits-list-text">I understand how important time is to you. Ready to work quickly and
+                    efficiently, without reducing the quality of work.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+      <section class="faq">
+    <div class="container faq-container">
+
+        <h2 class="faq-title">frequently <br> asked <br> <span class="title-green-word">question</span></h2>
+        <ul class="faq-list accordion-container">
+            <li class="faq-list-item ac is-active"  data-open>
+                <p class="faq-list-title ac-header ac-trigger">What programming languages ​​are most often used in your project?
+                    <svg class="faq-icon" width="24" height="24">
+                        <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-vector"></use>
+                    </svg>
+                </p>
+                <p class="faq-list-text ac-panel">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+            </li>
+            <li class="faq-list-item ac">
+                <p class="faq-list-title ac-header ac-trigger">What are the deadlines for the project?
+                    <svg class="faq-icon" width="24" height="24">
+                        <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-vector"></use>
+                    </svg>
+                </p>
+                <p class="faq-list-text ac-panel">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+            </li>
+            <li class="faq-list-item ac">
+                <p class="faq-list-title ac-header ac-trigger">What payment methods do you accept?
+                    <svg class="faq-icon" width="24" height="24">
+                        <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-vector"></use>
+                    </svg>
+                </p>
+                <p class="faq-list-text ac-panel">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+            </li>
+            <li class="faq-list-item ac">
+                <p class="faq-list-title ac-header ac-trigger">How can I contact you?
+                    <svg class="faq-icon" width="24" height="24">
+                        <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-vector"></use>
+                    </svg>
+                </p>
+                <p class="faq-list-text ac-panel">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+            </li>
+            <li class="faq-list-item ac">
+                <p class="faq-list-title ac-header ac-trigger">Do you provide advice or support?
+                    <svg class="faq-icon" width="24" height="24">
+                        <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-vector"></use>
+                    </svg>
+                </p>
+                <p class="faq-list-text ac-panel">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+            </li>
+
+            <li class="faq-list-item ac">
+                <p class="faq-list-title ac-header ac-trigger">What does the process of developing a software product look like from idea to implementation?
+                    <svg class="faq-icon" width="24" height="24">
+                        <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-vector"></use>
+                    </svg>
+                </p>
+                <p class="faq-list-text ac-panel">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+      <section class="section">
+    <div class="swiper container">
+        <h2 class="reviews-title">REVIEWS</h2>
+        <ul class="swiper-wrapper"></ul>
+        <ul class="reviews-btns-wrapp">
+            <li>
+                <button class="reviews-btn-left">
+                    <svg class="icon-svg js-btn-left" width="24" height="24">
+                        <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-arrow-narrow-right"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="reviews-btn-right">
+                    <svg class="icon-svg js-btn-right" width="24" height="24">
+                        <use href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-arrow-narrow-right"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</section>
+      <section class="work-together lazy-bg" id="work-together" data-bg="url('/img/decor_bg_work_together.png')">
+  <div class="container">
+    <h2 class="work-together-title">
+      <span class="work-together-h2-accent">let’s</span> work <br> together
+    </h2>
+    <div class="work-together-wrapper">
+      <div class="work-together-contact-inner">
+        <p class="work-together-content">
+          Contact me to transform your ideas into exceptional solutions.
+        </p>
+        <ul class="work-together-contact-list">
+          <li class="work-together-contact-item">
+            <a href="tel:+380904567890" class="work-together-contact-link"><svg class="work-together-icon">
+                <use xlink:href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-phone"></use>
+              </svg>
+              +38 090 456 78 90</a>
+          </li>
+          <li class="work-together-contact-item">
+            <a href="mailto:lloydjefferson@gmail.com" class="work-together-contact-link">
+              <svg class="work-together-icon">
+                <use xlink:href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-envelope"></use>
+              </svg>
+              lloydjefferson@gmail.com</a>
+          </li>
+          <li class="work-together-contact-item">
+            <a href="#" class="work-together-contact-link" id="show-map-btn">
+              <svg class="work-together-icon">
+                <use xlink:href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-geo"></use>
+              </svg>
+              USA, New York</a>
+          </li>
+        </ul>
+        <div class="work-together-location-mobile" id="map-mobile"></div>
+      </div>
+
+      <form action="#" class="work-together-form" name="work-together-form" id="work-together-form">
+        <div class="work-together-input-wrapper">
+          <input type="email" name="email" id="work-together-email" placeholder="Your email*"
+            class="work-together-input" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required />
+        </div>
+        <textarea name="message" id="work-together-message" class="work-together-textarea" placeholder="Message"
+          required></textarea><button type="submit" class="work-together-button" name="button"
+          id="work-together-submit">
+          SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="work-together-location-desctop" id="map-desktop"></div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-wrapper">
+      <a class="footer-logo" href="./index.html"
+        >Lloyd<span class="footer-logo-part">Jeffrson.</span></a
+      >
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a
+            class="footer-social-link"
+            href="https://www.instagram.com/goitclub/"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer-social-item">
+          <a
+            class="footer-social-link"
+            href="https://www.facebook.com/goITclub/"
+            >Facebook</a
+          >
+        </li>
+        <li class="footer-social-item">
+          <a
+            class="footer-social-link"
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            >Linkedin</a
+          >
+        </li>
+        <li class="footer-social-item">
+          <a
+            class="footer-social-link"
+            href="https://github.com/Lika060/BugBusters-project"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="footer-copyright-text">
+      &copy; Copyright 2024. Made by LloydJefferson
+    </p>
+  </div>
+</footer>
+
+    <div class="work-together-modal visually-hidden" id="work-together-modal-window">
+  <div class="work-together-modal-inner">
+    <button class="modal-close-btn" type="button" id="close-modal-button">
+      <svg class="work-together-modal-icon">
+        <use xlink:href="/BugBusters/assets/sprite-zPOd-tSv.svg#icon-x"></use>
+      </svg>
+    </button>
+    <h4 class="modal-title">Thank you for your interest in cooperation!</h4>
+    <p class="modal-message">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>
+
+
+  </body>
+</html>
